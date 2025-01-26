@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/static/script.js"></script>
+</head>
+<body>
+  <div>
+    <h1>Math and Json and Stuff</h1>
+    <p>Fill in a number and click "Calculate" to calculate each input separately, or fill in all the numbers and click "Send JSON" calculate all inputs at once.</p>
+    <ul>
+      <li>
+        <label for="factorial">Factorial</label>
+        <input id="factorial" type="number" placeholder="0" />
+        <button onclick="factorial()">Calculate (get)</button>
+      </li>
+      <li>
+        <label for="fibonacci">Fibonacci</label>
+        <input id="fibonacci" type="number" placeholder="0" />
+        <button onclick="fibonacci()">Calculate (get)</button>
+      </li>
+      <li>
+        <label for="average">Average</label>
+        <input id="avg1" type="number" placeholder="0" />
+        <input id="avg2" type="number" placeholder="0" />
+        <button onclick="average()">Calculate (get)</button>
+      </li>
+      <li>
+        <label for="json">Calculate All</label>
+        <button onclick="sendJSON()">Send JSON (post)</button>
+      </li>
+    </ul>
+    <pre><h2>Results:</h2><span id="result">Result Will Show Here</span></pre>
+  </div>
+</body>
+</html>
